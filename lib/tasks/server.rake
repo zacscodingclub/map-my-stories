@@ -3,6 +3,5 @@ task :start do
 end
 
 task :deploy do
-  exec 'rails assets:precompile'
-  exec 'eb deploy'
+  exec 'rails assets:precompile && eb deploy'
 end
