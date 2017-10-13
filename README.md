@@ -6,3 +6,12 @@ To start Rails server and `webpack-dev-server` concurrently using [Foreman](http
 ```bash
 rails start
 ```
+
+Deployed to Elastic Beanstack
+```bash
+eb create production # builds the server
+
+eb deploy # deploys new changes
+
+eb ssh # connects to container
+```
