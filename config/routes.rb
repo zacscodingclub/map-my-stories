@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
 
-  root 'pages#index'
+  devise_for :users, skip: [:sessions]
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  as :user do
+    get 'login', to: 'devise/sessions#new', as: :new_user_session
+    get 'login', to: 'devise/sessions#create', as: :user_session
+    delete 'logout', to: 'devise/sessions#destroy', as: :destroy_user_session
+  end
+
+  root 'pages#index'
 end
