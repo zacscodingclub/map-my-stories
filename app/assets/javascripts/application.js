@@ -13,4 +13,6 @@
 //= require rails-ujs
 //= require_tree .
 
-$(function(){ $(document).foundation(); });
+document.addEventListener("load", () => {
+  document.foundation();
+});
