@@ -14,5 +14,9 @@
  *= require_self
  *= require foundation_and_overrides
  *= devise
- 
+
  */
+.leaflet-container {
+  height: 600px;
+  width: 600px;
+}
