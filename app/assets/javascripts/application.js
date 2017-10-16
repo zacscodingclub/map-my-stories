@@ -11,6 +11,8 @@
 // about supported directives.
 //
 //= require rails-ujs
+//= require jquery
+//= require foundation
 //= require_tree .
 
 document.addEventListener("load", () => {

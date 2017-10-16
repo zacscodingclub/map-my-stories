@@ -1,0 +1,8 @@
+@import "foundation_and_overrides";
+@import "devise";
+@import "shared";
+
+.leaflet-container {
+  height: 600px;
+  width: 100%;
+}
